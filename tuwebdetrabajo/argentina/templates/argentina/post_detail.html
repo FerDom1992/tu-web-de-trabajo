@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="buscar_trabajo_detail">
+
+    <div class="publicado">
+        <p class="fecha">{{ post.created|date:'d - M - Y' }}</p>
+    </div>
+    <div class="title">
+        <h3>{{ post.titulo }}</h3>
+    </div>
+
+    <div class="imagen">
+        {% if post.imagen %}
+            <img src="{{ post.imagen.url }}" alt="">
+        {% else %}
+            <img src="#" alt="">
+        {% endif %}
+    </div>
+
+    <div class="texto">
+        <p>{{ post.mensaje }}</p>
+    </div>
+
+</div>
+
+{% endblock content %}

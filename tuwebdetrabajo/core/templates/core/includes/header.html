@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="header_conteiner">
+
+        <div class="logo">
+            <a class="link-logo" href="{% url 'home' %}">
+                <h1 class="title">Tu Web de Trabajo</h1> 
+            </a>
+            
+        </div>
+
+        <nav class="nav">
+            <i class="fas fa-bars barras"></i>
+            <div class="card">
+                <i class="fas fa-times-circle times"></i>
+                <ul class="menu">
+                    <li class="item"><a href="{% url 'home' %}" class="link">Inicio</a></li>
+                    <li class="item"><a href="{% url 'buscar_trabajo' %}" class="link">Buscar Trabajos</a></li>
+                    <li class="item"><a href="{% url 'acerca_de' %}" class="link">Acerca de</a></li>
+                    <li class="item"><a href="{% url 'contacto' %}" class="link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>

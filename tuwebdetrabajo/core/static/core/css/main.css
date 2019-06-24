@@ -1,0 +1,458 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+*, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh; }
+
+.total {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; }
+  .total .header {
+    background-color: #2f405b;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .total .header .header_conteiner {
+      margin: 0 auto;
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .total .header .header_conteiner .logo {
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        align-self: center;
+        font-family: "Montserrat", sans-serif; }
+        .total .header .header_conteiner .logo .link-logo {
+          color: white;
+          text-decoration: none;
+          cursor: pointer; }
+          .total .header .header_conteiner .logo .link-logo .title {
+            font-weight: 300; }
+      .total .header .header_conteiner .nav .barras {
+        color: white;
+        font-size: 2.5rem;
+        margin: 1rem 2rem;
+        cursor: pointer;
+        transition: 0.3s; }
+      .total .header .header_conteiner .nav .card {
+        background-color: #1f2f54;
+        width: 60vw;
+        height: 70vh;
+        position: fixed;
+        top: 0;
+        left: 100vw;
+        transition: 0.3s;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column; }
+        .total .header .header_conteiner .nav .card .times {
+          font-size: 2.8rem;
+          color: white;
+          cursor: pointer;
+          margin: 1rem;
+          align-self: flex-end; }
+        .total .header .header_conteiner .nav .card .menu {
+          display: flex;
+          flex-direction: column; }
+        .total .header .header_conteiner .nav .card .item {
+          flex: auto;
+          list-style: none; }
+          .total .header .header_conteiner .nav .card .item .link {
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            line-height: 4.5rem;
+            display: block;
+            padding-left: 1rem; }
+  .total .center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .total .center .contacto {
+      background-color: #cecece;
+      padding: 1rem;
+      margin-top: 6rem;
+      width: 70%; }
+      .total .center .contacto .title {
+        padding: 1rem 0;
+        margin: 0 auto;
+        text-align: center; }
+      .total .center .contacto .contenedor_contacto {
+        background-color: #e2e2e2;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column; }
+        .total .center .contacto .contenedor_contacto .input_section {
+          background-color: white;
+          margin: 1rem 0;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column; }
+          .total .center .contacto .contenedor_contacto .input_section .input {
+            height: 3rem;
+            width: 100%;
+            padding-left: 1rem; }
+          .total .center .contacto .contenedor_contacto .input_section .mensaje {
+            height: 15rem; }
+          .total .center .contacto .contenedor_contacto .input_section .boton {
+            width: 10rem;
+            padding: 0;
+            align-self: flex-end;
+            font-size: 1.2rem;
+            background-color: #3a3a3a;
+            color: white;
+            border-radius: 0.5rem;
+            border: none; }
+          .total .center .contacto .contenedor_contacto .input_section .input::placeholder {
+            font-size: 1.1rem;
+            opacity: 0.5; }
+    .total .center .acerca_de {
+      width: 90%;
+      margin-top: 5rem;
+      background-color: #f7f7f7;
+      padding: 1rem;
+      font-family: Roboto; }
+      .total .center .acerca_de .titulo {
+        font-size: 1.3rem;
+        margin: 1rem 0; }
+      .total .center .acerca_de .texto {
+        font-size: 1.1rem;
+        margin: 1rem 0; }
+      .total .center .acerca_de .pregunta {
+        font-weight: bold;
+        font-size: 1.15rem; }
+    .total .center .main {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between; }
+      .total .center .main .conteiner_main {
+        margin: 0 auto;
+        font-family: "Dosis", sans-serif;
+        font-size: 1.8rem;
+        color: #294060;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        justify-content: center; }
+        .total .center .main .conteiner_main .main-title {
+          text-align: center;
+          text-shadow: 3px 3px 6px #b7b7b7; }
+        .total .center .main .conteiner_main .button-verEmpleos {
+          background-color: #b29d6b;
+          text-align: center;
+          border-radius: 1rem;
+          margin: 2rem auto;
+          width: 20rem;
+          box-shadow: 3px 3px 6px #b7b7b7; }
+          .total .center .main .conteiner_main .button-verEmpleos .ver_empleos {
+            text-decoration: none;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: white; }
+      .total .center .main .img {
+        max-width: 76.8rem;
+        margin: 0 auto; }
+    .total .center .buscar_trabajo {
+      width: 100%;
+      height: 95%;
+      margin: 4.5rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .total .center .buscar_trabajo .seleccion_pais {
+        background-color: #b29d6b;
+        width: 100%;
+        text-align: center;
+        margin: 3rem 0;
+        box-shadow: 3px 3px 6px #cccccc; }
+        .total .center .buscar_trabajo .seleccion_pais .texto {
+          font-size: 1.7rem;
+          color: white;
+          padding: 0.6rem 0; }
+      .total .center .buscar_trabajo .paises {
+        width: 85%; }
+        .total .center .buscar_trabajo .paises .pais_link {
+          text-decoration: none; }
+          .total .center .buscar_trabajo .paises .pais_link .pais {
+            background-color: #f7f7f7;
+            width: 100%;
+            height: 17rem;
+            margin: 2rem 0;
+            box-shadow: 3px 3px 6px #cccccc; }
+            .total .center .buscar_trabajo .paises .pais_link .pais .pais_link {
+              text-decoration: none; }
+            .total .center .buscar_trabajo .paises .pais_link .pais .nombre_pais {
+              text-align: center;
+              padding: 1rem 0;
+              font-size: 1.3rem;
+              text-transform: uppercase;
+              color: #2f405b; }
+            .total .center .buscar_trabajo .paises .pais_link .pais .bandera {
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              width: 90%;
+              max-width: 25rem;
+              height: 12.5rem; }
+              .total .center .buscar_trabajo .paises .pais_link .pais .bandera img {
+                max-width: 100%;
+                width: 80%;
+                background-color: blue;
+                margin-bottom: 1rem; }
+    .total .center .buscar_trabajo_list {
+      width: 95%;
+      height: 91%;
+      margin-top: 5.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .total .center .buscar_trabajo_list .nombre_pais {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        width: 100%;
+        background-color: #ededed;
+        text-align: center;
+        color: #282828;
+        box-shadow: 3px 3px 6px #cccccc; }
+      .total .center .buscar_trabajo_list .contenedor_mensaje {
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f7f7f7;
+        box-shadow: 3px 3px 6px #cccccc;
+        margin-top: 1.3rem; }
+        .total .center .buscar_trabajo_list .contenedor_mensaje .mensaje {
+          text-align: center;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0.7rem 0;
+          background-color: #e5e5e5; }
+        .total .center .buscar_trabajo_list .contenedor_mensaje .descripcion_post {
+          width: 90%;
+          color: #2d2d2d;
+          font-size: 1.4rem; }
+        .total .center .buscar_trabajo_list .contenedor_mensaje .titulo_post {
+          font-size: 1.1rem;
+          margin: 1rem 0;
+          width: 90%;
+          text-align: center; }
+          .total .center .buscar_trabajo_list .contenedor_mensaje .titulo_post .titulo_p {
+            color: #2f405b; }
+        .total .center .buscar_trabajo_list .contenedor_mensaje .fecha_verMas {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: space-around;
+          width: 100%;
+          font-family: Roboto;
+          margin-bottom: 1rem; }
+          .total .center .buscar_trabajo_list .contenedor_mensaje .fecha_verMas .verMas {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: white;
+            align-self: flex-end;
+            padding: 0.2rem 1.5rem;
+            background-color: #b29d6b;
+            border-radius: 0.4rem;
+            margin-top: 1rem; }
+          .total .center .buscar_trabajo_list .contenedor_mensaje .fecha_verMas .texto_fecha .fecha {
+            font-weight: bold;
+            font-size: 1.2rem; }
+    .total .center .buscar_trabajo_detail {
+      width: 90%;
+      margin: 6rem auto;
+      box-shadow: 3px 3px 6px #cccccc;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .total .center .buscar_trabajo_detail .publicado {
+        align-self: flex-end;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.1rem; }
+      .total .center .buscar_trabajo_detail .title {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        width: 90%;
+        text-align: center;
+        line-height: 2rem; }
+      .total .center .buscar_trabajo_detail .imagen {
+        width: 90%;
+        margin: 1rem 0; }
+      .total .center .buscar_trabajo_detail .texto {
+        width: 90%;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        word-spacing: 0.4rem;
+        line-height: 2rem;
+        color: #2b2b2b; }
+  .total .footer {
+    background-color: black;
+    color: white;
+    width: 100%; }
+    .total .footer .footer_conteiner {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem; }
+      .total .footer .footer_conteiner .copyright {
+        font-size: 1.1rem; }
+      .total .footer .footer_conteiner .redes_sociales {
+        padding-top: 1rem; }
+        .total .footer .footer_conteiner .redes_sociales .link {
+          color: white;
+          text-decoration: none;
+          padding-right: 1rem;
+          font-size: 1.1rem; }
+          .total .footer .footer_conteiner .redes_sociales .link .icono__red {
+            margin-right: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .total .header .header_conteiner {
+    width: 80%; }
+    .total .header .header_conteiner .nav .barras {
+      display: none; }
+    .total .header .header_conteiner .nav .card {
+      position: static;
+      width: 42rem;
+      height: 100%;
+      background-color: #2f405b; }
+      .total .header .header_conteiner .nav .card .times {
+        display: none; }
+      .total .header .header_conteiner .nav .card .menu {
+        flex-direction: row; }
+        .total .header .header_conteiner .nav .card .menu .item {
+          text-transform: uppercase;
+          font-weight: 300;
+          text-align: center; }
+          .total .header .header_conteiner .nav .card .menu .item .link {
+            font-size: 1.4rem;
+            padding: 0; }
+          .total .header .header_conteiner .nav .card .menu .item .link:hover {
+            background-color: #4c6182; }
+  .total .center .contacto {
+    margin-top: 8rem;
+    width: 50%; }
+  .total .center .acerca_de {
+    width: 50%;
+    margin-top: 10rem;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    font-family: Roboto; }
+    .total .center .acerca_de .titulo {
+      font-size: 1.4rem; }
+    .total .center .acerca_de .texto {
+      font-size: 1.3rem; }
+    .total .center .acerca_de .pregunta {
+      font-size: 1.2rem; }
+  .total .center .buscar_trabajo {
+    width: 90%;
+    max-width: 90rem;
+    height: 60%;
+    background-color: #edeeef;
+    box-shadow: 10px 10px 10px #919191;
+    border-radius: 1rem;
+    margin-top: 15rem; }
+    .total .center .buscar_trabajo .seleccion_pais {
+      max-width: 50rem;
+      border-radius: 0.5rem; }
+    .total .center .buscar_trabajo .paises {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%; }
+      .total .center .buscar_trabajo .paises .pais {
+        background-color: #f9f9f9;
+        width: 30%;
+        height: 19.8rem;
+        margin: 2rem 1rem;
+        border-radius: 0.5rem; }
+        .total .center .buscar_trabajo .paises .pais .nombre_pais {
+          font-size: 1.6rem; }
+        .total .center .buscar_trabajo .paises .pais .bandera {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          width: 100%;
+          height: 12.5rem; }
+          .total .center .buscar_trabajo .paises .pais .bandera img {
+            max-width: 25rem;
+            width: 90%; }
+  .total .center .buscar_trabajo_list {
+    width: 70%;
+    margin-top: 6rem; }
+    .total .center .buscar_trabajo_list .nombre_pais {
+      margin: 3rem 0 2rem 0; }
+    .total .center .buscar_trabajo_list .contenedor_mensaje {
+      margin: 1rem 0; }
+      .total .center .buscar_trabajo_list .contenedor_mensaje .descripcion_post .descripcion {
+        font-size: 1.5rem; }
+      .total .center .buscar_trabajo_list .contenedor_mensaje .fecha_verMas {
+        font-size: 1.4rem; }
+  .total .center .buscar_trabajo_detail {
+    width: 60%;
+    margin-top: 9rem; }
+    .total .center .buscar_trabajo_detail .imagen {
+      width: 60%; }
+    .total .center .buscar_trabajo_detail .texto {
+      width: 60%;
+      margin-bottom: 3rem; }
+  .total .center .main {
+    background-image: url("../img/interface-3614766_1280.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center; }
+    .total .center .main .img .background {
+      display: none; }
+  .total .footer .footer_conteiner {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0; }
+    .total .footer .footer_conteiner .copyright {
+      font-size: 1.4rem;
+      margin-right: 8rem; }
+    .total .footer .footer_conteiner .redes_sociales {
+      padding: 0; }
+      .total .footer .footer_conteiner .redes_sociales .link {
+        font-size: 1.4rem; } }
+@media screen and (min-width: 1200px) {
+  .total .header .header_conteiner {
+    width: 60%; }
+  .total .center .contacto {
+    width: 30%;
+    margin-top: 10rem; }
+  .total .center .buscar_trabajo_list {
+    width: 60%; } }
+
+/*# sourceMappingURL=main.css.map */

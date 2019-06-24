@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'core/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+
+    <title>Tu Web de Trabajo | Nombre</title>
+
+</head>
+<body>
+<div class="total">
+
+{% include 'core/includes/header.html' %}
+
+    <div class="center">
+{% block content %}        
+        <main class="main">
+            <div class="conteiner_main">
+                <div class="main-title">
+                    <h1 class="title">¡Encuentra tu trabajo ideal!</h1>
+                </div>
+
+                <div class="button-verEmpleos">
+                    <a class="ver_empleos" href="{% url 'buscar_trabajo' %}">Ver empleos disponibles</a>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="{% static 'core/img/interface-3614766_1280.png' %}" alt="" class="background">
+            </div>
+        </main>
+{% endblock content %}        
+    </div>
+
+    {% include 'core/includes/footer.html' %}
+
+</div>
+<!------------------ JS ------------------>
+
+<script src="{% static 'core/js/vendor/modernizr.js' %}"></script>
+<script src="{% static 'core/js/vendor/fontawesome.js' %}"></script>
+<script src="{% static 'core/js/vendor/jquery.js' %}"></script>
+<script src="{% static 'core/js/main.js' %}"></script>
+
+</body>
+</html>

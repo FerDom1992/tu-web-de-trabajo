@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="buscar_trabajo">
+        <div class="seleccion_pais">
+            <h3 class="texto">Seleccione su país</h3>
+        </div>
+
+        <div class="paises">
+            <a class="pais_link" href="{% url 'buscar_trabajo_argentina' %}">
+                <div class="pais">
+                    
+                    <div class="nombre_pais">
+                        <h3 class="nombre">Argentina</h3>
+                    </div>
+                    <div class="bandera">
+                        <img src="{% static 'core/img/arg.svg' %}" alt="" class="bandera_pais">
+                    </div>                    
+                    
+                </div>
+            </a>
+
+            <a class="pais_link" href="{% url 'buscar_trabajo_chile' %}">
+                <div class="pais">
+                    
+                    <div class="nombre_pais">
+                        <h3 class="nombre">Chile</h3>
+                    </div>
+                    <div class="bandera">
+                        <img src="{% static 'core/img/ch.jpg' %}" alt="" class="bandera_pais">
+                    </div>                    
+                    
+                </div>
+            </a>
+
+            <a class="pais_link" href="{% url 'buscar_trabajo_mexico' %}">
+                <div class="pais">
+                    
+                    <div class="nombre_pais">
+                        <h3 class="nombre">Mexico</h3>
+                    </div>
+                    <div class="bandera">
+                        <img src="{% static 'core/img/mx.png' %}" alt="" class="bandera_pais">
+                    </div>                    
+                    
+                </div>
+            </a>            
+        </div>
+
+    </div>
+{% endblock content %}
